@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block content %}
+<center>
+<h1>Hello World</h1>
+    <p1>My name is Diogo and i'm testing flask.</p1>
+<br/>
+    </br></br>
+    <h4>My favorite pizza flavours are:</h4>
+    <p1>
+    {%for topping in fav_pizza%}
+        {{topping|capitalize()}}</br>
+    {%endfor%}
+    </p1>
+</center>
+{% endblock %}
